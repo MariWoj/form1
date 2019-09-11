@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	<title>Formularz</title>
+	<meta name="description" content="Opis strony">
+	<meta name="keywords" content="Kluczowe słowa">
+	<!-- Arkusze css a także czcionek -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="div-wrapper">
+		<h1>Formularz</h1>
+		<form class="form-wrapper">
+			<section class="left-column">
+				<fieldset>
+					<legend>Podstawowe dane</legend>
+					<p>
+						<input class="firstname" name="firstname" type="text" placeholder="Imię" autofocus required>
+						<input class="lastname" name="lastname" type="text" placeholder="Nazwisko" required>
+						<input class="email" name="email" type="email" placeholder="Twój e-mail" required>
+						<input class="url" name="url" type="url" placeholder="URL">
+					</p>
+					<p>
+						<label for="username">Nazwa użytkownika: </label>
+						<input id="username" name="username" type="text">
+						<label for="password">Hasło: </label>
+						<input id="password" name="password" type="password">
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Dane adresowe</legend>
+					<p>
+						<input class="address1" name="address1" type="text" placeholder="Adres1">
+						<input class="address2" name="address2" type="text" placeholder="Adres2">
+						<input class="city" name="city" type="text" placeholder="Miasto">
+						<input class="zip" name="zip" type="number" placeholder="Kod pocztowy">
+					</p>
+					<p>
+						<select>
+							<optgroup label="USA">
+								<option>Chicago</option>
+								<option>Nowy Jork</option>
+								<option>Dallas</option>
+							</optgroup>
+							<optgroup label="Australia">
+								<option>Sydney</option>
+								<option>Melbourne</option>
+								<option>Brisbane</option>
+							</optgroup>
+							<optgroup label="Polska">
+								<option>Warszawa</option>
+								<option>Wrocław</option>
+								<option>Kraków</option>
+							</optgroup>
+						</select>
+					</p>
+				</fieldset>
+			</section>
+			<section class="right-column">
+				<fieldset>
+					<legend>Ulubiony kolor i owoc</legend>
+					<p class="top">
+						<label><span><input type="radio" name="color" value="red" checked> Czerwony</span></label>
+						<label><span><input type="radio" name="color" value="green"> Zielony</span></label>
+						<label><span><input type="radio" name="color" value="blue"> Niebieski</span></label>
+						<label><span><input type="radio" name="color" value="black"> Czarny</span></label>
+						<label><span><input type="radio" name="color" value="magenta"> Magenta</span></label>
+						<label><span><input type="radio" name="color" value="yellow"> Żółty</span></label>
+					</p>
+					<p class="bottom">
+						<label><span><input type="checkbox" name="fruit" value="apple"> Jabłko</span></label>
+						<label><span><input type="checkbox" name="fruit" value="orange"> Pomarańcza</span></label>
+						<label><span><input type="checkbox" name="fruit" value="banana"> Banan</span></label>
+						<label><span><input type="checkbox" name="fruit" value="peach"> Brzoskwinia</span></label>
+						<label><span><input type="checkbox" name="fruit" value="pear"> Gruszka</span></label>
+						<label><span><input type="checkbox" name="fruit" value="plum"> Śliwka</span></label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Zainteresowania</legend>
+					<textarea rows="4" cols="40" placeholder="Czym się pasjonujesz?"></textarea>
+					<p><input type="submit" value="Wyślij"></p>
+				</fieldset>
+			</section>
+		</form>
+	</div>
+</body>
+
+</html>
